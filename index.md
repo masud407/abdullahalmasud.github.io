@@ -19,11 +19,13 @@ My research focuses on developing novel imaging and signal processing techniques
 
 ## Quick Links
 
-- Research Projects
-- Publications
-- Conference Presentations
-- CV
-- GitHub Projects
+## Navigation
+
+- [Research Projects](research.md)
+- [Publications](publications.md)
+- [Conference Presentations](conferences.md)
+- [Curriculum Vitae](cv.md)
+- [GitHub Profile](https://github.com/masud407)
 
 ## Contact
 

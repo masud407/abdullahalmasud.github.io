@@ -1,3 +1,3 @@
 # Curriculum Vitae
 
-CV download link coming soon.
+[Download CV](files/Abdullah_Al_Masud_CV.pdf)

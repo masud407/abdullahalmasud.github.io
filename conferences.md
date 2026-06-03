@@ -13,7 +13,7 @@
 - Fisher J, Rush K, Sierra S, Egan P,** Al Masud A,** Ferguson M. *Comparing Loop and Knot Security in Novel Self-Tensioning Suture Material.* Clinical Orthopaedic Society Annual Meeting, Tampa, Florida, USA, 2024.
 
 - **Masud AA,** Arefin AM, Chyu MC, Egan PF. *Design and Testing of 3D Printed Tissue Scaffolds with Directionally Tunable Stiffness.* ASME International Mechanical Engineering Congress and Exposition (IMECE), 2021.
-
+[Slides](/Slides/IMECE_2021_73745_Egan.mp4.pptx)
 - **Masud AA,** Arefin AM, Chyu MC, Egan PF. *Fabrication Consistency and Mechanics of 3D Printed Bone Tissue Scaffolds with Tunable Anisotropic Stiffness.* International Design Engineering Technical Conferences (IDETC), 2023.
 
 - **Masud AA,** Wood B, Lee C, Urban MW. *Signal Processing Analysis of Twinkling Artifact in Ultrasound Doppler Imaging.* The Journal of the Acoustical Society of America, 157(4 Suppl), A359, 2025.

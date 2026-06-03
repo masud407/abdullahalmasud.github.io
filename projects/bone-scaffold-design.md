@@ -28,11 +28,11 @@ Successful bone tissue scaffolds must provide sufficient mechanical support whil
 - Longitudinal stiffness increased while transverse stiffness decreased with increasing aspect ratio.
 - Finite element simulations closely matched experimental observations.
 - Hierarchical void structures improved fabrication consistency and enhanced biological design considerations.
-- Scaffold stiffness values ranging from approximately 3.9 to 8.4 kN/mm were achieved, making the designs suitable for vertebral fusion applications. :contentReference[oaicite:3]{index=3}
+- Scaffold stiffness values ranging from approximately 3.9 to 8.4 kN/mm were achieved, making the designs suitable for vertebral fusion applications. 
 
 ## Significance
 
-This work demonstrates how additive manufacturing can be used to engineer bone scaffolds with controlled anisotropy, porosity, and hierarchical architecture. The design framework enables the development of patient-specific implants that balance mechanical functionality with biological performance, supporting future advances in regenerative medicine and orthopedic implant design. :contentReference[oaicite:4]{index=4}
+This work demonstrates how additive manufacturing can be used to engineer bone scaffolds with controlled anisotropy, porosity, and hierarchical architecture. The design framework enables the development of patient-specific implants that balance mechanical functionality with biological performance, supporting future advances in regenerative medicine and orthopedic implant design. 
 
 ## Publications
 

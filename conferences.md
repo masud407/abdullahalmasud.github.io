@@ -28,7 +28,7 @@
 
 - Masud AA, Wood B, Lee C, Urban MW. *Signal Processing Analysis of Twinkling Artifact in Ultrasound Doppler Imaging.* The Journal of the Acoustical Society of America, 157(4 Suppl), A359, 2025.
 
-- Masud AA, Liu J, Egan PF, Fisher KA. *Estimating Effective Elastic Properties of 3-D Printed Specimens Using Resonant Ultrasound Spectroscopy.* The Journal of the Acoustical Society of America, 156(4 Suppl), A23, 2024. [Slides](/Slides/ASA2024_RUS.pdf)
+- Masud AA, Liu J, Egan PF, Fisher KA. *Estimating Effective Elastic Properties of 3-D Printed Specimens Using Resonant Ultrasound Spectroscopy.* The Journal of the Acoustical Society of America, 156(4 Suppl), A23, 2024. [Slides](/Slides/ASA2024_Resonance Ultrasound Spectroscopy.pdf)
 
 
 - Masud AA, Liu J. *A Scholte Wave Based Ultrasound Elastography Method for Imaging Superficial Tissue.* The Journal of the Acoustical Society of America, 153(3 Suppl), A265, 2023.

@@ -36,17 +36,17 @@ This work demonstrates how additive manufacturing can be used to engineer bone s
 
 ## Publications
 
-**Al Masud A, Arefin A, Khatri NR, Habib AA, Chyu MC, Egan PF.**
+**Al Masud A,** Arefin A, Khatri NR, Habib AA, Chyu MC, Egan PF.
 *A mechanical design of 3D printed bone tissue scaffolds with tunable anisotropy.*
 Biomedical Engineering Advances, 2025. 
 
 ## Conference Presentations
 
-**Al Masud A, Arefin AM, Chyu MC, Egan PF.**
+**Al Masud A,** Arefin AM, Chyu MC, Egan PF.
 *Design and Testing of 3D Printed Tissue Scaffolds with Directionally Tunable Stiffness.*
 ASME International Mechanical Engineering Congress and Exposition (IMECE), 2021.
 
-**Al Masud A, Arefin AM, Chyu MC, Egan PF.**
+**Al Masud A,** Arefin AM, Chyu MC, Egan PF.
 *Fabrication Consistency and Mechanics of 3D Printed Bone Tissue Scaffolds with Tunable Anisotropic Stiffness.*
 International Design Engineering Technical Conferences (IDETC), 2023.
 

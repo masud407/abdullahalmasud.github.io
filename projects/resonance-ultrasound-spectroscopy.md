@@ -17,12 +17,8 @@ Traditional mechanical testing methods often require destructive loading and may
 - Applied Particle Swarm Optimization (PSO) to estimate stiffness tensor components.
 - Compared resonance-derived elastic properties with conventional quasi-static mechanical testing.
 
-## Figure
-
-*Combined illustration showing the lattice geometry, experimental RUS setup, finite element model, and representative resonance spectra.*
-
 ![RUS Figure](../images/rus_combined.png)
-
+*Combined illustration showing the lattice geometry, experimental RUS setup, finite element model, and representative resonance spectra.*
 ## Key Findings
 
 - Successfully estimated anisotropic elastic constants of polymer lattice structures.

@@ -42,4 +42,4 @@ This work demonstrates how acoustic resonance methods can provide rapid, non-des
 ## Resources
 
 - 💻 GitHub Repository (coming soon)
-- 📊 Conference Presentation (coming soon)
+- 📊 Conference Presentation ([Slides](/Slides/ASA2024_Resonance_Ultrasound_Spectroscopy.pdf))

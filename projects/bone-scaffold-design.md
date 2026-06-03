@@ -3,11 +3,11 @@
 
 ## Overview
 
-This project focused on the design, fabrication, and mechanical characterization of 3D-printed bone tissue scaffolds with tunable anisotropic properties. By modifying lattice unit-cell geometry and scaffold architecture, the work aimed to mimic the directional mechanical behavior of native bone while maintaining high porosity for tissue growth and vascularization. Experimental testing and finite element analysis were combined to establish design principles for next-generation bone regeneration implants. :contentReference[oaicite:0]{index=0}
+This project focused on the design, fabrication, and mechanical characterization of 3D-printed bone tissue scaffolds with tunable anisotropic properties. By modifying lattice unit-cell geometry and scaffold architecture, the work aimed to mimic the directional mechanical behavior of native bone while maintaining high porosity for tissue growth and vascularization. Experimental testing and finite element analysis were combined to establish design principles for next-generation bone regeneration implants.
 
 ## Motivation
 
-Successful bone tissue scaffolds must provide sufficient mechanical support while promoting biological integration. Conventional scaffold designs are often isotropic and cannot reproduce the anisotropic mechanical behavior observed in natural bone. This project investigated how unit-cell geometry, porosity, and hierarchical architecture can be engineered to create mechanically efficient scaffolds tailored for orthopedic and spinal fusion applications. :contentReference[oaicite:1]{index=1}
+Successful bone tissue scaffolds must provide sufficient mechanical support while promoting biological integration. Conventional scaffold designs are often isotropic and cannot reproduce the anisotropic mechanical behavior observed in natural bone. This project investigated how unit-cell geometry, porosity, and hierarchical architecture can be engineered to create mechanically efficient scaffolds tailored for orthopedic and spinal fusion applications. :contentReference
 
 ## Methods
 
@@ -16,9 +16,7 @@ Successful bone tissue scaffolds must provide sufficient mechanical support whil
 - Investigated the effects of porosity, beam diameter, and unit-cell geometry.
 - Performed uniaxial compression testing in longitudinal and transverse directions.
 - Developed finite element models to predict mechanical performance and stress distributions.
-- Introduced hierarchical voids to improve printability, vascularization, and tissue growth potential. :contentReference[oaicite:2]{index=2}
-
-## Figure
+- Introduced hierarchical voids to improve printability, vascularization, and tissue growth potential. 
 
 *Combined illustration showing scaffold design, unit-cell geometry, finite element simulations, and representative mechanical testing results.*
 
@@ -53,13 +51,8 @@ ASME International Mechanical Engineering Congress and Exposition (IMECE), 2021.
 International Design Engineering Technical Conferences (IDETC), 2023.
 
 ## Collaboration
-
-* The Medicine, Mechanics, and Manufacturing Design (M3D) Lab
-* Department of Mechanical Engineering
-* The Medicine, Mechanics, and Manufacturing Design (M3D) Lab
+* The Medicine, Mechanics, and Manufacturing Design (M3D) Lab, Department of Mechanical Engineering, Texas Tech University
 
 ## Resources
-
-
 - 📊 Conference Slides: Coming Soon
 - 💻 GitHub Repository: Coming Soon

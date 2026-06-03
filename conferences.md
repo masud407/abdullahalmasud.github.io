@@ -4,7 +4,7 @@
 
 - **Al Masud A**, Chartier SR, Nwachukwu CT, Hesley GK, Giri S, Larson NB, Langenfield ID, Trzasko JD, Urban MW, Lee CU. *Zero Echo Time Imaging May Improve MRI Visualization of Breast Biopsy Markers.* Radiological Society of North America (RSNA), Chicago, Illinois, USA, 2026.
 
-- Johnson JE, Hesley GK, Kassmeyer BA,** Al Masud A,** Larson NB, Urban MW, Lee CU, Piltin MA. *Safety and Conspicuity of a Nonmetallic Ultrasound Twinkling Marker Observed for Sonographic Targeting (UTMOST Trial).* Global Breast Cancer Conference, South Korea, 2026.
+- Johnson JE, Hesley GK, Kassmeyer BA, **Al Masud A**, Larson NB, Urban MW, Lee CU, Piltin MA. *Safety and Conspicuity of a Nonmetallic Ultrasound Twinkling Marker Observed for Sonographic Targeting (UTMOST Trial).* Global Breast Cancer Conference, South Korea, 2026.
 
 - **Masud AA,** Wood BG, Lee CU, Urban MW. *Spectro-temporal Signal Analysis of Twinkling Artifacts from PMMA Markers.* 189th Acoustical Society of America Meeting, Honolulu, Hawaii, USA, 2025.
 
@@ -35,4 +35,4 @@
 
 - Mara A. Piltin, Gina K. Hesley, Matthew W. Urban, Blake A. Kassmeyer, **Masud, A. A.,** Nicholas B. Larson, Christine U. Lee, "Safety, Ultrasound Conspicuity and Migration of a Novel Ultrasound Twinkling Marker Observed for Sonographic Targeting (UTMost Trial); Results of a Phase 1 Clinical Trial." 26th ASBrS Annual Meeting, Las Vegas, May 2025
 
-- Nara Tashjian, Christine U. Lee, Gina K. Hesley, Blake A. Kassmeyer, Nicholas B. Larson, **Abdullah Al Masud,** Matthew W. Urban, Mara A. Piltin, "Twinkle, Twinkle Little Marker—A Phase 1 Trial on Ultrasound Twinkling of Breast Biopsy Markers" 34th annual National Consortium of Breast Centers (NCBC) conference, Las Vegas, March 2025.
+- Nara Tashjian, Christine U. Lee, Gina K. Hesley, Blake A. Kassmeyer, Nicholas B. Larson, **Al Masud A**, Matthew W. Urban, Mara A. Piltin, "Twinkle, Twinkle Little Marker—A Phase 1 Trial on Ultrasound Twinkling of Breast Biopsy Markers" 34th annual National Consortium of Breast Centers (NCBC) conference, Las Vegas, March 2025.

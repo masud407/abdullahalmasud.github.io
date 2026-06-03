@@ -22,7 +22,7 @@ Traditional mechanical testing methods often require destructive loading and may
 - Successfully estimated anisotropic elastic constants of polymer lattice structures.
 - Demonstrated strong agreement between experimentally measured and simulated resonance modes.
 - Resonance-based measurements produced higher effective moduli than quasi-static compression tests, highlighting the influence of local deformation mechanisms in traditional testing.
-- Established a framework for non-destructive characterization of architected materials and metamaterials. :contentReference[oaicite:0]{index=0}
+- Established a framework for non-destructive characterization of architected materials and metamaterials.
 
 ## Significance
 

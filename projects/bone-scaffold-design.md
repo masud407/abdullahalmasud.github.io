@@ -7,7 +7,7 @@ This project focused on the design, fabrication, and mechanical characterization
 
 ## Motivation
 
-Successful bone tissue scaffolds must provide sufficient mechanical support while promoting biological integration. Conventional scaffold designs are often isotropic and cannot reproduce the anisotropic mechanical behavior observed in natural bone. This project investigated how unit-cell geometry, porosity, and hierarchical architecture can be engineered to create mechanically efficient scaffolds tailored for orthopedic and spinal fusion applications. :contentReference
+Successful bone tissue scaffolds must provide sufficient mechanical support while promoting biological integration. Conventional scaffold designs are often isotropic and cannot reproduce the anisotropic mechanical behavior observed in natural bone. This project investigated how unit-cell geometry, porosity, and hierarchical architecture can be engineered to create mechanically efficient scaffolds tailored for orthopedic and spinal fusion applications. 
 
 ## Methods
 

@@ -31,8 +31,7 @@ This work demonstrates how acoustic resonance methods can provide rapid, non-des
 ## Publications
 
 **Al Masud A, Egan PF, Liu J, Fisher KA.**  
-*A stochastic approach for calculating elastic constants of polymer lattice structures based on spectral ultrasonic data.*  
-Ultrasonics, 2026.
+* A stochastic approach for calculating elastic constants of polymer lattice structures based on spectral ultrasonic data. Ultrasonics, 107870.
 
 ## Figure
 
@@ -42,6 +41,5 @@ Ultrasonics, 2026.
 
 ## Resources
 
-- 📄 Journal Article (available upon request)
 - 💻 GitHub Repository (coming soon)
 - 📊 Conference Presentation (coming soon)

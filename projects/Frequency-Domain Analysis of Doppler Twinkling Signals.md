@@ -16,7 +16,7 @@ This project examines the signal before formation of the final Doppler
 image. The goal is to identify temporal and spectral characteristics
 that distinguish twinkling from a stable reflector.
 ![Application](Picture7.svg)
-Figure: Demonstration of Twinkling Marker within human patient
+                 Figure: Demonstration of Twinkling Marker within human patient
 
 ## Methods
 -   Verasonics V1 ultrasound system
@@ -40,7 +40,9 @@ PMMA signal showed larger changes across repeated pulses and frames.
 
 ## RF Frequency-Domain Analysis
 
-![RF frequency-spectrum analysis](Picture9.svg) ![Beamformed RF signal analysis](Picture8.svg)
+![Beamformed RF signal analysis](Picture8.svg) ![RF frequency-spectrum analysis](Picture9.svg) 
+Figure: The variability and spectral width between PMMA and metal samples
+
 The beamformed RF spectrum showed clear differences between PMMA and
 metal. After wall filtering, metal maintained a relatively smooth and
 stable spectral response. PMMA retained greater residual energy and

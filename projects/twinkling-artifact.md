@@ -1,19 +1,14 @@
 # Quantitative Signal-Processing Analysis of Color Doppler Twinkling
 
 ## Overview
-
 This project investigates how color Doppler twinkling is represented across the ultrasound signal-processing chain. Controlled PMMA, low-twinkling PMMA (LPMMA), and metal targets were used to examine strong, reduced, and minimal twinkling responses.
-
 The analysis follows the signal from beamformed RF data through IQ demodulation, wall filtering, Power Doppler estimation, and autocorrelation-based spectral feature extraction.
 
 ## Motivation
-
 Color Doppler twinkling can improve the detection of highly reflective targets such as biopsy markers and calcifications, but the signal characteristics that produce the displayed artifact remain incompletely understood.
-
 Most previous studies have evaluated twinkling from the final Doppler image. This project examines the signal at intermediate processing stages to determine where material-dependent differences emerge and how acquisition settings affect those differences.
 
 ## Methods
-
 Ultrasound data were acquired using a Verasonics V1 system with L7-4 and L11-4v linear-array transducers.
 
 Acquisition conditions included:
@@ -50,7 +45,6 @@ Pairwise material overlap was quantified using the three-dimensional Bhattachary
 Pulse-wise and frame-wise analyses were also used to examine the temporal behavior of the beamformed RF signal.
 
 ## Key Findings
-
 - Material-dependent signal differences became clear after wall filtering and remained evident through IQ and Power Doppler processing.
 
 - PMMA generally produced the strongest residual Doppler response, LPMMA showed an intermediate response, and metal produced the lowest response.
@@ -69,7 +63,6 @@ Pulse-wise and frame-wise analyses were also used to examine the temporal behavi
 
 ## Publications
 - **Masud, A. A.,** Wood, B.G., Lee, C.U. & Urban, M.W., Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain (Submitted to Ultrasonics)
-
 Related work:
 - **Masud, A. A.,** Wood, B.G., Lee, C.U. & Urban, M.W.,. (2025) Signal Processing Analysis of Twinkling Artifact in Ultrasound Doppler Imaging. 188th Acoustical Society of America meeting, New Orleans, USA (Conference Talk)
 - **Al Masud A,** Wood B, Lee CU, Urban MW. Quantifying Doppler Twinkling in Polymethyl Methacrylate Markers Using Channel-Level Signal Features. IEEE International Ultrasonics Symposium (IUS) 2026, Raleigh, NC, USA (Poster).

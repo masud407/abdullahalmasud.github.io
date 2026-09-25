@@ -1,3 +1,11 @@
+## Projects
+
+### Quantitative Signal-Processing Analysis of Color Doppler Twinkling
+
+Quantitative analysis of beamformed RF, IQ, Power Doppler, temporal variability, and autocorrelation-based spectral features in PMMA, LPMMA, and metal targets.
+
+[View Project](projects/)
+
 # Frequency-Domain Analysis of Doppler Twinkling Signals
 
 ## Overview

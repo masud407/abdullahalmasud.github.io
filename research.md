@@ -1,14 +1,19 @@
 # Research Projects
 
 
-### [Quantitative Analysis of Doppler Twinkling Artifacts (part A)](projects/twinkling-artifact.md)
+## Spectro-Temporal Characterization of Color Doppler Twinkling
 
-Spectro-temporal analysis and characterization of Doppler twinkling artifacts.
+Signal-level analysis of temporal variability and spectral behavior across RF and IQ processing stages.
+
+[View Project](projects/twinkling-artifact.md)
 
 ---
-### [Frequency Analysis of Twinkling Signature (part B)](projects/FFT-analysis.md)
 
-Frequency Analysis of Twinkling Signature
+## Frequency-Domain Signatures of Doppler Twinkling
+
+Frequency-domain analysis of RF and IQ signals to identify spectral features associated with twinkling.
+
+[View Project](projects/FFT-analysis.md)
 
 ---
 ### [Ultrasound Surface Wave Elastography](projects/scholte-wave-elastography.md)

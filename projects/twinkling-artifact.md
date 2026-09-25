@@ -71,7 +71,7 @@ Pulse-wise and frame-wise analyses were also used to examine the temporal behavi
 
 ## Publications
 - Masud, A. A., Wood, B.G., Lee, C.U. & Urban, M.W., Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain (Submitted to Ultrasonics)
-- 
+
 Related work:
 - Masud, A. A., Wood, B.G., Lee, C.U. & Urban, M.W.,. (2025) Signal Processing Analysis of Twinkling Artifact in Ultrasound Doppler Imaging. 188th Acoustical Society of America meeting, New Orleans, USA (Conference Talk)
 - Al Masud A, Wood B, Lee CU, Urban MW. Quantifying Doppler Twinkling in Polymethyl Methacrylate Markers Using Channel-Level Signal Features. IEEE International Ultrasonics Symposium (IUS) 2026, Raleigh, NC, USA (Poster).

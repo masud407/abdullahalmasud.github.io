@@ -1,12 +1,12 @@
 # Research Projects
 
 
-### [Quantitative Analysis of Doppler Twinkling Artifacts](projects/twinkling-artifact.md)
+### [Quantitative Analysis of Doppler Twinkling Artifacts (part A)](projects/twinkling-artifact.md)
 
 Spectro-temporal analysis and characterization of Doppler twinkling artifacts.
 
 ---
-### [Frequency Analysis of Twinkling Signature](projects/FFT-analysis.md)
+### [Frequency Analysis of Twinkling Signature (part B)](projects/FFT-analysis.md)
 
 Frequency Analysis of Twinkling Signature
 

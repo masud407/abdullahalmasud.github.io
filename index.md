@@ -22,7 +22,7 @@ My research focuses on developing novel imaging and signal processing techniques
 ## Navigation
 
 - [Research Projects](research.md)
-- projects/index.md
+projects/index.md
 - [Publications](publications.md)
 - [Conference Presentations](conferences.md)
 - [Curriculum Vitae](cv.md)

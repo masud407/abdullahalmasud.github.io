@@ -26,7 +26,7 @@ Acquisition conditions included:
 - 20 consecutive Doppler frames
 - Five samples per acquisition condition
 
- ![Signal-processing framework](Picture5.svg)
+ ![Signal-processing framework](../images/Picture5.svg)
 
 ### Signal-Processing Pipeline
 
@@ -43,7 +43,7 @@ Two autocorrelation-derived features were evaluated:
 - `x1`: mean Doppler frequency
 - `x2`: spectral broadening
 
-![3D joint feature-space map](Picture6.svg
+![3D joint feature-space map](../images/Picture6.svg
 
 Power Doppler was represented as `log10(PD)`.
 

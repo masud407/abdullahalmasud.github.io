@@ -29,5 +29,4 @@ My research focuses on developing novel imaging and signal processing techniques
 
 ## Contact
 
-Email: your_email_here
-GitHub: https://github.com/masud407
+Email: masud407@iut-dhaka.edu

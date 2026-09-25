@@ -33,6 +33,6 @@ Estimating elastic properties of 3D-printed materials.
 
 Design and characterization of anisotropic bone scaffolds.
 
-### [abc]
+
 
 

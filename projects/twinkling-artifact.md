@@ -68,12 +68,12 @@ Pulse-wise and frame-wise analyses were also used to examine the temporal behavi
 - L11-4v showed a different frequency dependence and maintained stronger separation for several material comparisons at 5 and 6 MHz.
 
 ## Publications
-- **Masud, A. A., Wood, B.G., Lee, C.U. & Urban, M.W., Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain (Submitted to Ultrasonics)
-**
+- **Masud, A. A., Wood, B.G., Lee, C.U. & Urban, M.W.,** Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain (Submitted to Ultrasonics)
+
 Related work:
-- Masud, A. A., Wood, B.G., Lee, C.U. & Urban, M.W.,. (2025) Signal Processing Analysis of Twinkling Artifact in Ultrasound Doppler Imaging. 188th Acoustical Society of America meeting, New Orleans, USA (Conference Talk)
-- Al Masud A, Wood B, Lee CU, Urban MW. Quantifying Doppler Twinkling in Polymethyl Methacrylate Markers Using Channel-Level Signal Features. IEEE International Ultrasonics Symposium (IUS) 2026, Raleigh, NC, USA (Poster).
-- Masud, A. A., Wood, B.G., Lee, C.U. & Urban, M.W., Radiofrequency and IQ Signal Analysis of Pressure-Dependent Twinkling Artifacts in PMMA Breast Biopsy Markers. 2025 IEEE International Ultrasonics Symposium (IUS), Utrecht, Netherlands, 2025 (Poster).
+- **Masud, A. A.,** Wood, B.G., Lee, C.U. & Urban, M.W.,. (2025) Signal Processing Analysis of Twinkling Artifact in Ultrasound Doppler Imaging. 188th Acoustical Society of America meeting, New Orleans, USA (Conference Talk)
+- **Al Masud A,** Wood B, Lee CU, Urban MW. Quantifying Doppler Twinkling in Polymethyl Methacrylate Markers Using Channel-Level Signal Features. IEEE International Ultrasonics Symposium (IUS) 2026, Raleigh, NC, USA (Poster).
+- **Masud, A. A.,** Wood, B.G., Lee, C.U. & Urban, M.W., Radiofrequency and IQ Signal Analysis of Pressure-Dependent Twinkling Artifacts in PMMA Breast Biopsy Markers. 2025 IEEE International Ultrasonics Symposium (IUS), Utrecht, Netherlands, 2025 (Poster).
 
 ## Resources
 - Github Repository

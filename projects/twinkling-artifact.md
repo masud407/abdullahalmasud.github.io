@@ -39,20 +39,14 @@ Acquisition conditions included:
 7. Autocorrelation-based spectral feature extraction
 
 Two autocorrelation-derived features were evaluated:
-
 - `x1`: mean Doppler frequency
 - `x2`: spectral broadening
-
-![3D joint feature-space map](../images/Picture6.svg
+ ![3D joint feature-space map](../images/Picture6.svg)
 
 Power Doppler was represented as `log10(PD)`.
-
 The three measures were combined into the joint feature space:
-
 [x1, x2, log10(PD)]
-
 Pairwise material overlap was quantified using the three-dimensional Bhattacharyya coefficient (BC3D), where lower BC3D indicates greater material separation.
-
 Pulse-wise and frame-wise analyses were also used to examine the temporal behavior of the beamformed RF signal.
 
 ## Key Findings

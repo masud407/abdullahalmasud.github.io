@@ -16,6 +16,7 @@ A central goal of my research is to translate signal-level and physical measurem
 - Medical Image Analysis
 - Biomedical Image Reconstruction
 - Machine Learning for Medical Imaging
+- Nondestructive Testing 
 
 ## Quick Links
 

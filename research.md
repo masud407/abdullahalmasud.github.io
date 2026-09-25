@@ -6,9 +6,9 @@
 Spectro-temporal analysis and characterization of Doppler twinkling artifacts.
 
 ---
-### [Quantitative Analysis of Doppler Twinkling Artifacts](projects/FFT-analysis.md)
+### [Frequency Analysis of Twinkling Signature](projects/FFT-analysis.md)
 
-Frequency Analysis of Twinkling Signature.
+Frequency Analysis of Twinkling Signature
 
 ---
 ### [Ultrasound Surface Wave Elastography](projects/scholte-wave-elastography.md)

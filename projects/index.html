@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spectro-Temporal Signal Analysis of Doppler Twinkling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:    #0D1B2A;
+    --navy-mid:#142233;
+    --navy-light:#1E3048;
+    --cyan:    #00B4D8;
+    --cyan-dim:#0090B0;
+    --slate:   #6B7A8D;
+    --frost:   #C8E6F0;
+    --off-white:#F7F9FC;
+    --white:   #FFFFFF;
+    --line:    rgba(0,180,216,.18);
+
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  *, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--navy);
+    color: var(--off-white);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.75;
+    font-size: 1.05rem;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: sticky; top: env(safe-area-inset-top, 0px);
+    background: rgba(13,27,42,.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    padding: .85rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    z-index: 100;
+  }
+  .nav-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .78rem; font-weight: 500; letter-spacing: .12em;
+    color: var(--cyan); text-transform: uppercase;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .8rem; font-weight: 400; color: var(--frost);
+    text-decoration: none; transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--cyan); }
+
+  /* ── HERO ── */
+  .hero {
+    padding: 7rem 2rem 5rem;
+    max-width: 960px; margin: 0 auto;
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .72rem; font-weight: 500; letter-spacing: .18em;
+    color: var(--cyan); text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    display: flex; align-items: center; gap: .75rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block; width: 2.5rem; height: 1px;
+    background: var(--cyan);
+  }
+  h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    font-weight: 600; line-height: 1.08;
+    letter-spacing: -.02em;
+    color: var(--white);
+    margin-bottom: 2rem;
+    max-width: 820px;
+  }
+  h1 em {
+    font-style: italic;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    color: var(--cyan);
+  }
+  .hero-desc {
+    max-width: 620px;
+    color: var(--frost);
+    font-size: 1.1rem; line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .82rem; font-weight: 500; letter-spacing: .06em;
+    padding: .7rem 1.6rem; border-radius: 2px;
+    text-decoration: none; transition: all .18s;
+    display: inline-flex; align-items: center; gap: .5rem;
+  }
+  .btn-primary {
+    background: var(--cyan); color: var(--navy);
+  }
+  .btn-primary:hover { background: #00d0f8; }
+  .btn-secondary {
+    border: 1px solid rgba(200,230,240,.3);
+    color: var(--frost);
+  }
+  .btn-secondary:hover { border-color: var(--cyan); color: var(--cyan); }
+
+  /* ── SPECTRUM DIVIDER ── */
+  .spectrum-bar {
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--cyan) 20%, var(--cyan-dim) 60%, transparent);
+    opacity: .5;
+  }
+
+  /* ── SECTION SHELL ── */
+  section { padding: 5rem 2rem; }
+  .inner { max-width: 960px; margin: 0 auto; }
+
+  .section-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .7rem; font-weight: 500; letter-spacing: .2em;
+    color: var(--slate); text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 600; letter-spacing: -.01em;
+    color: var(--white); margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem; font-weight: 600;
+    color: var(--white); margin-bottom: .5rem;
+  }
+
+  /* ── OVERVIEW / MOTIVATION ── */
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 4rem;
+    align-items: start;
+    margin-top: 1rem;
+  }
+  .overview-body { color: var(--frost); line-height: 1.85; }
+
+  /* ── METHODS ── */
+  #methods { background: var(--navy-mid); }
+  .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 2.5rem;
+  }
+  .method-cell {
+    background: var(--navy-mid);
+    padding: 1.4rem 1.5rem;
+  }
+  .method-icon {
+    font-size: 1.3rem; margin-bottom: .6rem;
+    display: block;
+  }
+  .method-label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .85rem; font-weight: 500;
+    color: var(--white);
+    line-height: 1.35;
+  }
+  .method-detail {
+    font-size: .8rem; color: var(--slate);
+    margin-top: .2rem;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  /* ── PIPELINE / ANALYSIS FIGURES ── */
+  .figure-block {
+    margin-top: 3.5rem;
+    border: 1px solid var(--line);
+  }
+  .figure-img {
+    width: 100%; display: block;
+    background: var(--navy-light);
+    min-height: 220px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .figure-img img {
+    width: 100%; max-height: 480px; object-fit: contain;
+    display: block;
+  }
+  .figure-img-placeholder {
+    color: var(--slate); font-family: 'Space Grotesk', sans-serif;
+    font-size: .82rem; padding: 3rem; text-align: center;
+  }
+  .figure-caption {
+    padding: 1.2rem 1.5rem;
+    border-top: 1px solid var(--line);
+    background: var(--navy-mid);
+    font-size: .88rem; color: var(--frost); line-height: 1.65;
+  }
+  .figure-caption strong {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600; color: var(--cyan); font-style: normal;
+  }
+
+  /* ── FINDINGS ── */
+  #findings { background: var(--navy-mid); }
+  .findings-list {
+    list-style: none;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .findings-list li {
+    background: var(--navy-mid);
+    padding: 1.6rem 1.8rem;
+    display: flex; gap: 1rem; align-items: flex-start;
+    color: var(--frost); line-height: 1.7; font-size: .97rem;
+  }
+  .finding-num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .7rem; font-weight: 600;
+    color: var(--cyan); margin-top: .25rem;
+    flex-shrink: 0; letter-spacing: .05em;
+  }
+
+  /* ── PRESENTATION ── */
+  #presentation { border-top: 1px solid var(--line); }
+  .pres-card {
+    border: 1px solid var(--line);
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .pres-title {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 1.15rem; font-weight: 400;
+    color: var(--white); margin-bottom: .6rem;
+    font-style: italic; line-height: 1.4;
+  }
+  .pres-authors {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .82rem; color: var(--frost); margin-bottom: .3rem;
+  }
+  .pres-affil {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .78rem; color: var(--slate);
+  }
+
+  /* ── RESOURCES ── */
+  #resources { background: var(--navy-mid); }
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 2.5rem;
+  }
+  .resource-item {
+    background: var(--navy-mid);
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: background .18s;
+    display: flex; flex-direction: column; gap: .5rem;
+  }
+  .resource-item:hover { background: var(--navy-light); }
+  .resource-icon { font-size: 1.4rem; }
+  .resource-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .88rem; font-weight: 500;
+    color: var(--white);
+  }
+  .resource-desc {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .75rem; color: var(--slate);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 3rem 2rem;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .75rem; color: var(--slate);
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 680px) {
+    .overview-grid, .findings-list { grid-template-columns: 1fr; }
+    .pres-card { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">Twinkling Artifact Study</span>
+  <ul class="nav-links">
+    <li><a href="#methods">Methods</a></li>
+    <li><a href="#pipeline">Pipeline</a></li>
+    <li><a href="#findings">Findings</a></li>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <p class="hero-eyebrow">Ultrasound Signal Research</p>
+  <h1>Spectro-Temporal Analysis of Doppler <em>Twinkling</em> Artifacts</h1>
+  <p class="hero-desc">
+    Investigating the RF and IQ signal characteristics that distinguish color Doppler twinkling in PMMA markers from non-twinkling metal targets — through temporal variation, wall filtering, and spectral analysis.
+  </p>
+  <div class="hero-actions">
+    <a href="#resources" class="btn btn-primary">View Resources</a>
+    <a href="#pipeline" class="btn btn-secondary">Signal Pipeline</a>
+    <a href="#findings" class="btn btn-secondary">Key Findings</a>
+  </div>
+</header>
+
+<div class="spectrum-bar"></div>
+
+<!-- OVERVIEW -->
+<section id="overview">
+  <div class="inner">
+    <div class="overview-grid">
+      <div>
+        <p class="section-label">Overview</p>
+        <h2>What This Study Examines</h2>
+        <p class="overview-body">
+          Color Doppler twinkling can improve ultrasound visualization of highly reflective targets, 
+          yet the signal characteristics responsible for the artifact remain incompletely understood. 
+          This project examines RF and IQ signals to identify the temporal and frequency-domain features 
+          that distinguish twinkling.
+        </p>
+      </div>
+      <div>
+        <p class="section-label">Motivation</p>
+        <h2>Why It Matters</h2>
+        <p class="overview-body">
+          Identifying what makes PMMA twinkling markers behave differently from stable metal reflectors 
+          informs both artifact characterization and potential clinical applications — enabling more 
+          precise use of twinkling as a diagnostic or marker-detection tool in ultrasound imaging.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODS -->
+<section id="methods">
+  <div class="inner">
+    <p class="section-label">Methods</p>
+    <h2>Acquisition &amp; Processing Setup</h2>
+    <div class="methods-grid">
+      <div class="method-cell">
+        <span class="method-icon">🔬</span>
+        <div class="method-label">Verasonics V1</div>
+        <div class="method-detail">Ultrasound system</div>
+      </div>
+      <div class="method-cell">
+        <span class="method-icon">🎯</span>
+        <div class="method-label">PMMA &amp; Metal Targets</div>
+        <div class="method-detail">Twinkling vs. non-twinkling</div>
+      </div>
+      <div class="method-cell">
+        <span class="method-icon">〰️</span>
+        <div class="method-label">Plane-Wave Doppler</div>
+        <div class="method-detail">Transmission mode</div>
+      </div>
+      <div class="method-cell">
+        <span class="method-icon">📡</span>
+        <div class="method-label">4 MHz Transmit</div>
+        <div class="method-detail">2.5 kHz PRF</div>
+      </div>
+      <div class="method-cell">
+        <span class="method-icon">⚡</span>
+        <div class="method-label">Delay-and-Sum</div>
+        <div class="method-detail">Beamforming</div>
+      </div>
+      <div class="method-cell">
+        <span class="method-icon">📊</span>
+        <div class="method-label">IQ Demodulation</div>
+        <div class="method-detail">+ Wall filtering</div>
+      </div>
+      <div class="method-cell">
+        <span class="method-icon">🔁</span>
+        <div class="method-label">Pulse- &amp; Frame-Wise</div>
+        <div class="method-detail">Temporal analysis</div>
+      </div>
+      <div class="method-cell">
+        <span class="method-icon">📈</span>
+        <div class="method-label">RF &amp; IQ Spectra</div>
+        <div class="method-detail">Frequency-domain analysis</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIPELINE -->
+<section id="pipeline">
+  <div class="inner">
+    <p class="section-label">Signal-Processing Pipeline</p>
+    <h2>From Raw Channel Data to Doppler Estimation</h2>
+    <p class="overview-body">
+      Raw channel RF data were processed through beamforming, IQ demodulation, wall filtering, 
+      and Doppler estimation — each stage designed to isolate twinkling signal characteristics.
+    </p>
+    <div class="figure-block">
+      <div class="figure-img">
+        <img src="Picture7.svg" alt="Signal-processing framework diagram" onerror="this.parentElement.innerHTML='<div class=\'figure-img-placeholder\'>Figure: Signal-processing framework<br><small>Picture7.svg</small></div>'">
+      </div>
+      <p class="figure-caption"><strong>Figure 1</strong> — Signal-processing framework showing the full pipeline from raw RF acquisition through beamforming, IQ demodulation, wall filtering, and final Doppler estimation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEMPORAL ANALYSIS -->
+<section id="temporal" style="background: var(--navy-mid);">
+  <div class="inner">
+    <p class="section-label">Temporal Analysis</p>
+    <h2>Pulse-to-Pulse Signal Variation</h2>
+    <p class="overview-body">
+      PMMA demonstrated greater temporal variation than metal across repeated pulses and frames. 
+      The metal response remained comparatively stable, while the twinkling signal showed 
+      pronounced changes — a core distinguishing characteristic of the artifact.
+    </p>
+    <div class="figure-block">
+      <div class="figure-img">
+        <img src="Picture8.svg" alt="Beamformed RF signal analysis" onerror="this.parentElement.innerHTML='<div class=\'figure-img-placeholder\'>Figure: Beamformed RF signal analysis<br><small>Picture8.svg</small></div>'">
+      </div>
+      <p class="figure-caption"><strong>Figure 2</strong> — Beamformed RF signal analysis comparing PMMA and metal targets. PMMA shows pronounced temporal variation across pulses; metal remains stable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FREQUENCY DOMAIN -->
+<section id="frequency">
+  <div class="inner">
+    <p class="section-label">Frequency-Domain Analysis</p>
+    <h2>Spectral Content Before and After Wall Filtering</h2>
+    <p class="overview-body">
+      Beamformed RF signals were analyzed in the frequency domain at both stages of wall filtering. 
+      PMMA produced broader and more irregular spectral content, whereas metal maintained 
+      a smoother and more stable spectral response across conditions.
+    </p>
+    <div class="figure-block">
+      <div class="figure-img">
+        <img src="Picture9.svg" alt="RF frequency-spectrum analysis" onerror="this.parentElement.innerHTML='<div class=\'figure-img-placeholder\'>Figure: RF frequency-spectrum analysis<br><small>Picture9.svg</small></div>'">
+      </div>
+      <p class="figure-caption"><strong>Figure 3</strong> — RF frequency spectra for PMMA and metal targets before and after wall filtering. PMMA shows broader, more irregular spectral energy compared to the stable metal response.</p>
+    </div>
+  </div>
+</section>
+
+<!-- IQ SPECTRAL -->
+<section id="iq" style="background: var(--navy-mid);">
+  <div class="inner">
+    <p class="section-label">IQ Spectral Analysis</p>
+    <h2>Post-Demodulation Spectral Differences</h2>
+    <p class="overview-body">
+      IQ analysis revealed comparable spectral differences after demodulation. PMMA showed 
+      greater spectral variation across the IQ frequency range, while metal maintained 
+      a narrower and more consistent frequency response.
+    </p>
+    <div class="figure-block">
+      <div class="figure-img">
+        <img src="Picture4.svg" alt="IQ frequency-spectrum analysis" onerror="this.parentElement.innerHTML='<div class=\'figure-img-placeholder\'>Figure: IQ frequency-spectrum analysis<br><small>Picture4.svg</small></div>'">
+      </div>
+      <p class="figure-caption"><strong>Figure 4</strong> — IQ frequency spectra showing spectral differences between PMMA and metal after IQ demodulation. Spectral variation in PMMA persists post-demodulation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINDINGS -->
+<section id="findings">
+  <div class="inner">
+    <p class="section-label">Key Findings</p>
+    <h2>What the Data Shows</h2>
+    <ul class="findings-list">
+      <li>
+        <span class="finding-num">01</span>
+        <span>PMMA showed greater temporal signal variability than metal across repeated pulses and frames.</span>
+      </li>
+      <li>
+        <span class="finding-num">02</span>
+        <span>Wall filtering revealed clear signal differences between twinkling PMMA and stable metal reflectors.</span>
+      </li>
+      <li>
+        <span class="finding-num">03</span>
+        <span>PMMA produced broader and more irregular RF spectral content compared to metal.</span>
+      </li>
+      <li>
+        <span class="finding-num">04</span>
+        <span>Spectral differences between targets persisted after amplitude normalization.</span>
+      </li>
+      <li>
+        <span class="finding-num">05</span>
+        <span>IQ analysis confirmed similar spectral distinctions following demodulation.</span>
+      </li>
+      <li>
+        <span class="finding-num">06</span>
+        <span>Temporal and frequency-domain features provide complementary measures of the twinkling response.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRESENTATION -->
+<section id="presentation">
+  <div class="inner">
+    <p class="section-label">Related Presentation</p>
+    <h2>Conference Abstract</h2>
+    <div class="pres-card">
+      <div>
+        <p class="pres-title">Spectro-Temporal Signal Analysis of Twinkling Artifacts from PMMA Markers</p>
+        <p class="pres-authors">Abdullah Al Masud · Benjamin G. Wood · Christine U. Lee · Matthew W. Urban</p>
+        <p class="pres-affil">Mayo Clinic, Rochester, MN, USA</p>
+      </div>
+      <a href="#resources" class="btn btn-secondary">View Slides</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources">
+  <div class="inner">
+    <p class="section-label">Resources</p>
+    <h2>Project Materials</h2>
+    <div class="resources-grid">
+      <a href="#" class="resource-item">
+        <span class="resource-icon">💻</span>
+        <span class="resource-name">Analysis Code</span>
+        <span class="resource-desc">MATLAB / Python scripts</span>
+      </a>
+      <a href="#" class="resource-item">
+        <span class="resource-icon">📑</span>
+        <span class="resource-name">Presentation</span>
+        <span class="resource-desc">Conference slides (PDF)</span>
+      </a>
+      <a href="#" class="resource-item">
+        <span class="resource-icon">🖼️</span>
+        <span class="resource-name">Figures</span>
+        <span class="resource-desc">Full-resolution exports</span>
+      </a>
+      <a href="#" class="resource-item">
+        <span class="resource-icon">⚙️</span>
+        <span class="resource-name">Signal-Processing Scripts</span>
+        <span class="resource-desc">Pipeline implementation</span>
+      </a>
+      <a href="#" class="resource-item">
+        <span class="resource-icon">📚</span>
+        <span class="resource-name">Related Publications</span>
+        <span class="resource-desc">Prior twinkling research</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Mayo Clinic · Rochester, MN · Ultrasound Signal Analysis Research
+</footer>
+
+</body>
+</html>

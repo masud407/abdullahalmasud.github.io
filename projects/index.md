@@ -1,4 +1,10 @@
+# Research Projects
 
+## Quantitative Signal-Processing Analysis of Color Doppler Twinkling
+
+Stage-by-stage analysis of beamformed RF, IQ, Power Doppler, spectral features, and temporal characteristics of color Doppler twinkling.
+
+[View Project](quantitative-twinkling/)
 
 # Frequency-Domain Analysis of Doppler Twinkling Signals
 

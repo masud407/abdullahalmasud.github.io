@@ -104,6 +104,4 @@ Mayo Clinic, Rochester, MN, USA
 
 -   Analysis Code
 -   Presentation
--   Figures
--   Signal-Processing Scripts
--   Related Publications
+

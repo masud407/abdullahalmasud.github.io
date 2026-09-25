@@ -27,7 +27,6 @@ My research focuses on developing novel imaging and signal processing techniques
 - [Curriculum Vitae](cv.md)
 - [GitHub Profile](https://github.com/masud407)
 
-- [Research Projects](projects/)
 
 ## Contact
 

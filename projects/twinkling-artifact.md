@@ -68,7 +68,7 @@ Pulse-wise and frame-wise analyses were also used to examine the temporal behavi
 - L11-4v showed a different frequency dependence and maintained stronger separation for several material comparisons at 5 and 6 MHz.
 
 ## Publications
-- **Masud, A. A., Wood, B.G., Lee, C.U. & Urban, M.W.,** Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain (Submitted to Ultrasonics)
+- **Masud, A. A.,** Wood, B.G., Lee, C.U. & Urban, M.W., Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain (Submitted to Ultrasonics)
 
 Related work:
 - **Masud, A. A.,** Wood, B.G., Lee, C.U. & Urban, M.W.,. (2025) Signal Processing Analysis of Twinkling Artifact in Ultrasound Doppler Imaging. 188th Acoustical Society of America meeting, New Orleans, USA (Conference Talk)

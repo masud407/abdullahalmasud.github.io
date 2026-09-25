@@ -2,143 +2,70 @@
 
 ## Overview
 
-This project investigates the spectro-temporal characteristics of color Doppler twinkling in polymethyl methacrylate (PMMA) markers.
-
-Raw ultrasound channel data were processed through beamforming, IQ demodulation, wall filtering, and Doppler estimation. Twinkling PMMA markers were compared with non-twinkling metal targets to determine how the artifact appears in the RF and IQ signal domains.
+This project investigates the spectro-temporal characteristics of color Doppler twinkling in polymethyl methacrylate (PMMA) markers and compares them with non-twinkling metal targets.
 
 ## Motivation
 
-Color Doppler twinkling can improve ultrasound visualization of highly reflective targets, including biopsy markers. However, the signal behavior that produces the artifact is not fully understood.
+Color Doppler twinkling can improve ultrasound visualization of highly reflective targets, but the signal characteristics responsible for the artifact remain unclear. This project examines RF and IQ signals to identify temporal and frequency-domain features associated with twinkling.
 
-This project examines the signal before the final Doppler image. The goal is to identify temporal and spectral characteristics that distinguish twinkling from a stable reflector.
+## Methods
 
-## Experimental Setup
-
-Ultrasound data were acquired using a Verasonics V1 research system.
-
-- PMMA twinkling marker
-- Non-twinkling metal target
+- Verasonics V1 ultrasound system
+- PMMA twinkling marker and non-twinkling metal target
 - Plane-wave Doppler transmission
-- Doppler transmit frequency: 4 MHz
-- Pulse repetition frequency: 2.5 kHz
-- Multiple pulses and frames per acquisition
+- 4 MHz transmit frequency
+- 2.5 kHz pulse repetition frequency
+- Delay-and-sum beamforming
+- IQ demodulation
+- Wall filtering
+- Pulse-wise and frame-wise signal analysis
+- RF and IQ frequency-spectrum analysis
 
 ## Signal-Processing Pipeline
 
-The analysis followed the ultrasound signal through several processing stages:
+![Signal-processing framework](Picture7.svg)
 
-1. Raw channel RF data
-2. Delay-and-sum beamforming
-3. IQ demodulation
-4. Wall filtering
-5. Temporal variability analysis
-6. RF and IQ frequency-spectrum analysis
-7. Power Doppler estimation
-
-The beamforming process was implemented using the MATLAB Ultrasound Toolbox (MUST).
-
-### Signal-Processing Framework
-
-<p align="center">
-  <img src="Picture7.svg" width="900" alt="Signal-processing framework for Doppler twinkling analysis">
-</p>
-
-<p align="center">
-  <em>Processing of raw channel RF data through beamforming, IQ demodulation, wall filtering, and Doppler analysis.</em>
-</p>
+Raw channel RF data were processed through beamforming, IQ demodulation, wall filtering, and Doppler estimation.
 
 ## Temporal Analysis
 
-Signal variability was evaluated across pulses and frames.
+![Beamformed RF signal analysis](Picture8.svg)
 
-The PMMA marker showed substantially greater temporal variation than the metal target. Metal produced a stable response across repeated acquisitions, whereas the twinkling signal showed irregular changes in amplitude.
+PMMA showed greater temporal variation than metal. The metal response remained relatively stable, whereas the twinkling signal showed greater changes across repeated pulses and frames.
 
-For the IQ data, the RMS of the temporal standard deviation was:
+## Frequency-Domain Analysis
 
-- **PMMA twinkling marker:** 854.01
-- **Metal:** 37.01
+![RF frequency-spectrum analysis](Picture9.svg)
 
-### Beamformed RF Signal Analysis
-
-<p align="center">
-  <img src="Picture8.svg" width="900" alt="Beamformed RF comparison between twinkling PMMA and metal">
-</p>
-
-<p align="center">
-  <em>Temporal characteristics of beamformed RF signals from twinkling PMMA and non-twinkling metal.</em>
-</p>
-
-## RF Spectral Analysis
-
-The frequency spectrum of the beamformed RF signal was evaluated before and after wall filtering.
-
-After wall filtering:
-
-- Metal showed a relatively smooth and stable spectrum.
-- PMMA retained greater residual spectral energy.
-- The PMMA spectrum showed broader and more irregular frequency content.
-- Strong spectral differences were observed near the transmitted frequency region.
-
-Normalization was also used to reduce differences caused by overall signal magnitude and emphasize differences in spectral distribution.
-
-### RF Frequency-Spectrum Analysis
-
-<p align="center">
-  <img src="Picture9.svg" width="900" alt="RF frequency spectrum of PMMA and metal">
-</p>
-
-<p align="center">
-  <em>Frequency-domain comparison of beamformed RF signals after wall filtering.</em>
-</p>
+Beamformed RF signals were analyzed in the frequency domain before and after wall filtering. PMMA showed broader and more irregular spectral content, whereas metal produced a smoother and more stable spectral response.
 
 ## IQ Spectral Analysis
 
-IQ demodulation shifted the RF spectral content toward baseband.
+![IQ frequency-spectrum analysis](Picture4.svg)
 
-The IQ spectra preserved the difference between the twinkling and non-twinkling targets:
-
-- Metal retained a more stable spectral response.
-- PMMA showed greater spectral variation and broader frequency content.
-- Increased spectral variability remained visible after demodulation and wall filtering.
-
-The RF and IQ analyses therefore provide complementary views of the same twinkling-related signal behavior.
-
-### IQ Frequency-Spectrum Analysis
-
-<p align="center">
-  <img src="Picture4.svg" width="900" alt="IQ frequency spectrum of PMMA and metal">
-</p>
-
-<p align="center">
-  <em>Spectral characteristics of the demodulated IQ signal for twinkling PMMA and metal.</em>
-</p>
+IQ analysis showed a similar difference between the two materials. PMMA showed greater spectral variation, whereas metal maintained a more stable frequency response.
 
 ## Key Findings
 
-- Twinkling PMMA showed substantially greater temporal variability than metal.
-- Wall filtering suppressed stationary signal components and revealed differences associated with the twinkling response.
-- Beamformed RF spectra from PMMA showed broader and more irregular frequency content than metal.
-- Spectral differences remained after normalization, indicating that the distinction was not caused only by differences in signal magnitude.
-- IQ analysis preserved the stability-versus-variability contrast observed in the RF domain.
-- Pulse-to-pulse variation and spectral variability provide quantitative features for distinguishing twinkling from a stable reflector.
-
-## Significance
-
-These results show that Doppler twinkling has measurable signatures before formation of the final color Doppler image.
-
-The combination of temporal variability and spectral analysis provides a framework for studying how twinkling develops through the ultrasound processing chain. These features may also support the development of optimized ultrasound-visible markers and quantitative twinkling detection methods.
+- PMMA showed greater temporal signal variability than metal.
+- Wall filtering revealed differences between twinkling and stable reflector signals.
+- PMMA showed broader and more irregular RF spectral content.
+- Spectral differences remained after normalization.
+- IQ analysis showed similar spectral differences after demodulation.
+- Temporal and frequency-domain features provide complementary measures of the twinkling response.
 
 ## Related Presentation
 
 **Spectro-Temporal Signal Analysis of Twinkling Artifacts from PMMA Markers**
 
-Abdullah Al Masud, Benjamin G. Wood, Christine U. Lee, Matthew W. Urban  
-Department of Radiology, Mayo Clinic, Rochester, MN, USA
+Abdullah Al Masud, Benjamin G. Wood, Christine U. Lee, Matthew W. Urban
+
+Mayo Clinic, Rochester, MN, USA
 
 ## Resources
 
-- Analysis code
+- Analysis Code
 - Presentation
 - Figures
-- Signal-processing scripts
-- Related publications
+- Signal-Processing Scripts
+- Related Publications

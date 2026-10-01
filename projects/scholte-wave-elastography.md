@@ -36,13 +36,13 @@ The work modeled the complete process from **ultrasound excitation and acoustic 
 
 ### Surface and Shear Wave Propagation
 
-![Wave Propagation](surface_wave_propagation.png)
+![Wave Propagation](surface_wave_propagation.jpeg)
 
 *Simulated Scholte wave propagating near the water–tissue interface and shear wave propagating deeper within the tissue.*
 
 ### Acoustic Radiation Force
 
-![ARF Comparison](arf_comparison.png)
+![ARF Comparison](arf_comparison.jpeg)
 
 *Comparison of acoustic radiation force distributions obtained using different ARF modeling approaches.*
 

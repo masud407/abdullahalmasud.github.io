@@ -6,7 +6,7 @@ This project investigated **Zero Echo Time (ZTE) MRI** for improving visualizati
 
 The work combined **phantom imaging, human imaging studies, DICOM image processing, 3D segmentation, statistical analysis, and algorithm sensitivity testing** to evaluate marker artifact size, geometric accuracy, and detectability.
 
-![Overview](projects/images/Overview.jpg)
+![Overview](../images/Overview.jpg)
 
 ## Methods
 
@@ -17,7 +17,7 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ### Analysis Workflow
 
-![ZTE MRI Analysis Workflow](projects/images/MRI_process_layout.png)
+![ZTE MRI Analysis Workflow](MRI_process_layout.png)
 
 *Workflow for quantitative ZTE/T1GRE MRI analysis, from image acquisition and DICOM processing through segmentation, quantitative measurement, statistical analysis, and human-reader evaluation.*
 
@@ -33,19 +33,19 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ### ZTE vs. T1GRE
 
-![ZTE vs T1GRE](projects/images/Marker_conpicuity.png)
+![ZTE vs T1GRE](Marker_conpicuity.png)
 
 *Representative ZTE and T1GRE images demonstrating biopsy-marker visualization in phantom and human breast-tissue backgrounds.*
 
 ### Image Processing
 
-
+![Image Processing Pipeline](MRI_process_layout.png)
 
 *ROI extraction, adaptive thresholding, binary segmentation, and quantitative marker characterization.*
 
 ### Quantitative Results
 
-![Quantitative Results](images/zte_quantitative_results.png)
+![Quantitative Results](../images/zte_quantitative_results.png)
 
 *Comparison of apparent marker volume and maximum length between T1GRE and ZTE MRI.*
 

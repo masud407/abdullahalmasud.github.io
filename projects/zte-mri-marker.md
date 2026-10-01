@@ -2,9 +2,7 @@
 
 ## Overview
 
-This project investigated **Zero Echo Time (ZTE) MRI** for improving visualization and quantitative characterization of breast biopsy markers compared with conventional T1-weighted GRE (T1GRE) MRI.
-
-The work combined **phantom imaging, human imaging studies, DICOM image processing, 3D segmentation, statistical analysis, and algorithm sensitivity testing** to evaluate marker artifact size, geometric accuracy, and detectability.
+This project investigated **Zero Echo Time (ZTE) MRI** for improving visualization and quantitative characterization of breast biopsy markers compared with conventional T1-weighted GRE (T1GRE) MRI. The work combined **phantom imaging, human imaging studies, DICOM image processing, 3D segmentation, statistical analysis, and algorithm sensitivity testing** to evaluate marker artifact size, geometric accuracy, and detectability.
 
 ![Overview](../images/Overview.jpg)
 
@@ -18,7 +16,6 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 ### Analysis Workflow
 
 ![ZTE MRI Analysis Workflow](MRI_process_layout.png)
-
 *Workflow for quantitative ZTE/T1GRE MRI analysis, from image acquisition and DICOM processing through segmentation, quantitative measurement, statistical analysis, and human-reader evaluation.*
 
 ## Key Findings
@@ -34,14 +31,12 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 ### ZTE vs. T1GRE
 
 ![ZTE vs T1GRE](Marker_conpicuity.png)
-
 *Representative ZTE and T1GRE images demonstrating biopsy-marker visualization in phantom and human breast-tissue backgrounds.*
 
 
 ### Quantitative Results
 
 ![Quantitative Results](../images/zte_quantitative_results.png)
-
 *Comparison of apparent marker volume and maximum length between T1GRE and ZTE MRI.*
 
 - Metallic-marker apparent volume decreased by **73.7%** on ZTE compared with T1GRE (**324.17 → 85.30 mm³**).
@@ -51,7 +46,6 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 - Quantitative sensitivity analyses evaluated the effects of **segmentation threshold and voxel resolution** on measurement robustness.
 
 ## Technical Skills
-
 **MATLAB • Python • R • DICOM • MRI • Medical Image Processing • 3D Segmentation • Adaptive Thresholding • Quantitative Imaging • Statistical Analysis • Algorithm Validation**
 
 ## Publication

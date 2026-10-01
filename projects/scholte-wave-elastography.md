@@ -18,50 +18,6 @@ The work modeled the complete process from **ultrasound excitation and acoustic 
 - Estimated wave speeds using **time-of-flight analysis** and compared results with theoretical and experimental observations.
 
 ### Simulation Workflow
-### Simulation Workflow
-
-```text
-                    SURFACE-WAVE SIMULATION
-
-┌─────────────────────────────────────────────────────┐
-│        STAGE 1 — COMPRESSSIONAL WAVE SIMULATION    │
-│                                                     │
-│  Grid → Medium → Transducer + Excitation → Sensor  │
-│                         ↓                           │
-│             Compressional Wave Simulation          │
-│                kspaceFirstOrder3D                   │
-│                         ↓                           │
-│               Acoustic Field (p, v, I)              │
-│                         ↓                           │
-│              Calculate ARF Distribution             │
-└─────────────────────────┬───────────────────────────┘
-                          ↓
-                 Convert ARF → Velocity
-                          ↓
-┌─────────────────────────────────────────────────────┐
-│           STAGE 2 — ELASTIC WAVE SIMULATION        │
-│                                                     │
-│        Redefine Grid / Medium / Source / Sensor     │
-│                         ↓                           │
-│               Elastic Wave Simulation              │
-│                   pstdElastic2D                     │
-│                         ↓                           │
-│              Scholte + Shear Waves                  │
-│                         ↓                           │
-│               Time-of-Flight Analysis              │
-│                         ↓                           │
-│                 Wave-Speed Estimation              │
-└─────────────────────────┬───────────────────────────┘
-                          ↓
-                 ┌───────────────────┐
-                 │    VALIDATION     │
-                 │ Theory ↔ Simulation│
-                 │ Experiment ↔ Sim. │
-                 └───────────────────┘
-```
-
-*Two-stage numerical framework for ARF-induced surface acoustic wave simulation and validation using k-Wave.*
-
 
 ![Surface Wave Simulation Workflow](surface_wave_workflow.png)
 

@@ -15,7 +15,7 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ### Analysis Workflow
 
-![ZTE MRI Analysis Workflow](images/MRI_process_layout.png)
+![ZTE MRI Analysis Workflow](projects/MRI_process_layout.png)
 
 *Workflow for quantitative ZTE/T1GRE MRI analysis, from image acquisition and DICOM processing through segmentation, quantitative measurement, statistical analysis, and human-reader evaluation.*
 

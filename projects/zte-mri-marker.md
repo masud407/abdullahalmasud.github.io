@@ -6,6 +6,8 @@ This project investigated **Zero Echo Time (ZTE) MRI** for improving visualizati
 
 The work combined **phantom imaging, human imaging studies, DICOM image processing, 3D segmentation, statistical analysis, and algorithm sensitivity testing** to evaluate marker artifact size, geometric accuracy, and detectability.
 
+![Overview](images/Overview.jpg)
+
 ## Methods
 
 - Analyzed **38 biopsy markers** using ZTE and T1GRE MRI in controlled phantoms.
@@ -37,7 +39,7 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ### Image Processing
 
-![MRI Segmentation](images/mri_segmentation_pipeline.png)
+
 
 *ROI extraction, adaptive thresholding, binary segmentation, and quantitative marker characterization.*
 

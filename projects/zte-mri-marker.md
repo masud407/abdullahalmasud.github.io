@@ -37,11 +37,6 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 *Representative ZTE and T1GRE images demonstrating biopsy-marker visualization in phantom and human breast-tissue backgrounds.*
 
-### Image Processing
-
-![Image Processing Pipeline](MRI_process_layout.png)
-
-*ROI extraction, adaptive thresholding, binary segmentation, and quantitative marker characterization.*
 
 ### Quantitative Results
 
@@ -49,21 +44,23 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 *Comparison of apparent marker volume and maximum length between T1GRE and ZTE MRI.*
 
+- Metallic-marker apparent volume decreased by **73.7%** on ZTE compared with T1GRE (**324.17 → 85.30 mm³**).
+- Metallic-marker maximum length decreased by **23.6%** (**10.12 → 7.73 mm**).
+- Bone-cement marker volume showed a smaller **12.5% reduction** (**87.41 → 76.52 mm³**), with minimal change in maximum length.
+- ZTE demonstrated **lower measurement bias and improved geometric agreement** with physical marker dimensions compared with T1GRE.
+- Quantitative sensitivity analyses evaluated the effects of **segmentation threshold and voxel resolution** on measurement robustness.
+
 ## Technical Skills
 
 **MATLAB • Python • R • DICOM • MRI • Medical Image Processing • 3D Segmentation • Adaptive Thresholding • Quantitative Imaging • Statistical Analysis • Algorithm Validation**
 
 ## Publication
 
-**Al Masud A, et al.** *Zero echo time versus T1-weighted gradient-recalled echo MRI of breast biopsy markers: a phantom study comparing susceptibility artifact volume and geometric dimensions.* **Translational Breast Cancer Research, 2026.**
+- **Al Masud A, et al.** *Zero echo time versus T1-weighted gradient-recalled echo MRI of breast biopsy markers: a phantom study comparing susceptibility artifact volume and geometric dimensions.* **Translational Breast Cancer Research, 2026.**
+- **Al Masud, A.**, Chartier, S. R., Nwachukwu, C. T., Hesley, G. K., Giri, S., Larson, N. B., Langenfield, I. D., Trzasko, J. D., Urban, M. W., Lee, C. U. Evaluation of a polymethyl methacrylate breast biopsy marker with zero echo time MRI. (Accepted: **European Radiology Experimental**).
 
-## Collaboration
-
-- Department of Radiology, Mayo Clinic
-- Department of Physiology and Biomedical Engineering, Mayo Clinic
 
 ## Resources
 
-- 📄 Published Article
 - 💻 GitHub Repository: Coming Soon
-- 📊 Analysis Code: Coming Soon
+

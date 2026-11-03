@@ -31,13 +31,13 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ### ZTE vs. T1GRE
 
-![ZTE vs T1GRE](images/zte_t1gre_comparison.png)
+![ZTE vs T1GRE](projects/zte_t1gre_comparison.png)
 
 *Representative ZTE and T1GRE images demonstrating biopsy-marker visualization in phantom and human breast-tissue backgrounds.*
 
 ### Image Processing
 
-![MRI Segmentation](images/mri_segmentation_pipeline.png)
+![MRI Segmentation](projects/mri_segmentation_pipeline.png)
 
 *ROI extraction, adaptive thresholding, binary segmentation, and quantitative marker characterization.*
 

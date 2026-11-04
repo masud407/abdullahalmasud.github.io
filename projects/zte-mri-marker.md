@@ -37,13 +37,11 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ### Image Processing
 
-![MRI Segmentation](projects/mri_segmentation_pipeline.png)
-
 *ROI extraction, adaptive thresholding, binary segmentation, and quantitative marker characterization.*
 
 ### Quantitative Results
 
-![Quantitative Results](images/zte_quantitative_results.png)
+![Quantitative Results](zte_quantitative_results.png)
 
 *Comparison of apparent marker volume and maximum length between T1GRE and ZTE MRI.*
 

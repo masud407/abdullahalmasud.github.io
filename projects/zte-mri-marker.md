@@ -31,7 +31,7 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ### ZTE vs. T1GRE
 
-![ZTE vs T1GRE](projects/zte_t1gre_comparison.png)
+![ZTE vs T1GRE](marker_conspicuity.png)
 
 *Representative ZTE and T1GRE images demonstrating biopsy-marker visualization in phantom and human breast-tissue backgrounds.*
 

@@ -96,5 +96,5 @@ These quantitative measurements were compared with analytical surface-wave theor
 ## Resources
 
 - 📄 PhD Dissertation ![Link](/files/DIssertation_MASUD-PRIMARY-2024.pdf)
-- 💻 GitHub Repository: Coming Soon
+- 💻 **GitHub Repository:** [Scholte Wave Elastography Using k-Wave](https://github.com/masud407/scholte-wave-elastography-k-wave/tree/main/scholte-wave-elastography)
 - 💻 MATLAB / k-Wave Simulation Code: Coming Soon

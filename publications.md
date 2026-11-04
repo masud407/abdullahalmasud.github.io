@@ -21,7 +21,7 @@
 
 -  **Al Masud A**, Nwachukwu CT, Langenfield ID, Trzasko JD, Urban MW, Lee CU. **Zero Echo Time imaging may improve MRI visualization of breast biopsy markers** Submitted to *European Radiology Experimental*.
 
--  Masud AA, Wood BG, Lee CU, Urban MW. **Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain** In preparation.
+-  Masud AA, Wood BG, Lee CU, Urban MW. **Signal Characteristics of Color Doppler Twinkling Across the Ultrasound Processing Chain** submitted to *Ultrasonics*.
 
 # Thesis and Dissertation
 

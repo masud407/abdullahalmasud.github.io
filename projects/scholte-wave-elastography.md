@@ -77,7 +77,8 @@ These quantitative measurements were compared with analytical surface-wave theor
 ## Dissertation
 
 **Al Masud A.** *Numerical Simulation of Impulse-Induced Surface Acoustic Wave Elastography Using k-Wave Acoustic Simulation Toolbox.* **PhD Dissertation, Mechanical Engineering, Texas Tech University, 2024.**
-
+**Masud AA,** Liu J. Numerical simulation of impulse-induced surface acoustic waves for elastography purposes using k-Wave simulation toolbox. Journal of Applied Physics, 2024.
+**Masud AA,** Liu J. Ultrasonic surface acoustic wave elastography: A review of basic theories, technical developments, and medical applications. Medical Physics, 2024.
 ## Research Applications
 
 - Superficial tissue elastography

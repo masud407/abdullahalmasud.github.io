@@ -17,7 +17,7 @@
 
  # Manuscripts in Preparation and Submitted
 
--  Piltin MA, Hesley GK, Urban MW, Kassmeyer BA, Al Masud A, Larson NB, Lee CU. **Ultrasound Conspicuity, Safety, and Migration of a Nonmetallic Ultrasound Twinkling Marker Observed for Sonographic Targeting (UTMOST Trial): Results of a Phase 1 Clinical Trial.** In preparation.
+-  Piltin MA, Hesley GK, Urban MW, Kassmeyer BA, **Al Masud A,** Larson NB, Lee CU. **Ultrasound Conspicuity, Safety, and Migration of a Nonmetallic Ultrasound Twinkling Marker Observed for Sonographic Targeting (UTMOST Trial): Results of a Phase 1 Clinical Trial.** In preparation.
 
 -  **Al Masud A**, Nwachukwu CT, Langenfield ID, Trzasko JD, Urban MW, Lee CU. **Zero Echo Time imaging may improve MRI visualization of breast biopsy markers** Submitted to *European Radiology Experimental*.
 

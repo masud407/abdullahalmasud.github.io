@@ -11,12 +11,12 @@ A central goal of my research is to translate signal-level and physical measurem
 ## Research Interests
 
 - Ultrasound Imaging and Signal Processing
-- Ultrasound Elastography
-- Color Doppler and Twinkling Artifact Analysis
+- Biomedical Acoustics
 - Medical Image Analysis
 - Biomedical Image Reconstruction
 - Machine Learning for Medical Imaging
-- Nondestructive Testing 
+- Nondestructive Testing
+- Biomedical Design
 
 ## Quick Links
 

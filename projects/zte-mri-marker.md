@@ -51,7 +51,7 @@ The work combined **phantom imaging, human imaging studies, DICOM image processi
 
 ## Publication
 
-**Al Masud A, et al.** *Zero echo time versus T1-weighted gradient-recalled echo MRI of breast biopsy markers: a phantom study comparing susceptibility artifact volume and geometric dimensions.* **Translational Breast Cancer Research, 2026.**
+**Al Masud, A.**, Chartier, S. R., Nwachukwu, C. T., Langenfeld, I. D., Trzasko, J. D., Johnson, J. E., ... & Lee, C. U. Zero Echo Time versus T1-Weighted Gradient-Recalled Echo MRI of Breast Biopsy Markers: A Phantom Study Comparing Susceptibility Artifact Volume and Geometric Dimensions. Translational Breast Cancer Research.
 
 ## Collaboration
 

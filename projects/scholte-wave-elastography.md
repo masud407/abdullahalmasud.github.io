@@ -94,6 +94,6 @@ These quantitative measurements were compared with analytical surface-wave theor
 
 ## Resources
 
-- 📄 PhD Dissertation
+- 📄 PhD Dissertation ![Link](/files/DIssertation_MASUD-PRIMARY-2024.pdf)
 - 💻 GitHub Repository: Coming Soon
 - 💻 MATLAB / k-Wave Simulation Code: Coming Soon
